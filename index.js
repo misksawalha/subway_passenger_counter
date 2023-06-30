@@ -6,9 +6,11 @@ let myCount = 0
 
 incrementBtn.onclick=()=>{
         myCount = myCount+1
-        counter.innerText = myCount
+        counter.textContent = myCount
 }
 
 saveBtn.onclick=()=>{
-    previousEntries.innerText+=myCount+"-"
+    previousEntries.textContent+=myCount+" - "
+    myCount = 0
+    counter.textContent = myCount
 }
